@@ -4,7 +4,7 @@ Forked repository, modifications to fit needs of own applications
 Main changes:
 <ul>
 <li>[Done] Ability to define the designer item size</li>
-<li>[Open] ??Ability to define the designer item size PER ITEM! (not globally)</li>
+<li>[Done/Not tested!] Ability to define the designer item size PER ITEM! (not globally)</li>
 <li>[Open] Overwork zooming and paning controls</li>
 <li>[Open] Fix strange errors for resources not found and 'infinite' not valid value for property Width in VS2015</li>
 </ul>
