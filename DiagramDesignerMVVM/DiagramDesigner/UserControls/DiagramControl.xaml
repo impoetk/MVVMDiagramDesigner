@@ -31,9 +31,9 @@
                             <Setter Property="s:ItemConnectProps.EnabledForConnection"
                                     Value="True" />
                             <Setter Property="Width"
-                                    Value="{x:Static  s:DesignerItemViewModelBase.ItemWidth}" />
+                                    Value="{Binding ItemWidth}" />
                             <Setter Property="Height"
-                                    Value="{x:Static  s:DesignerItemViewModelBase.ItemHeight}" />
+                                    Value="{Binding ItemHeight}" />
                             <Setter Property="SnapsToDevicePixels"
                                     Value="True" />
                             <Setter Property="ContentTemplate">
@@ -222,7 +222,7 @@
                             <s:DesignerCanvas Loaded="DesignerCanvas_Loaded"
                                                 MinHeight="800"
                                                 MinWidth="1000"
-                                                Background="White"
+                                                Background="Transparent"
                                                 AllowDrop="True">
                             </s:DesignerCanvas>
                         </ItemsPanelTemplate>

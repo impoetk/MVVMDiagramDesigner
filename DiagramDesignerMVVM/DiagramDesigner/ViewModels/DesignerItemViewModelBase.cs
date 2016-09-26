@@ -16,9 +16,11 @@ namespace DiagramDesigner
         private double top;
         private bool showConnectors = false;
         private List<FullyCreatedConnectorInfo> connectors = new List<FullyCreatedConnectorInfo>();
+        private double _itemWidth;
+        private double _itemHeight;
 
-        private static double itemWidth = 65;
-        private static double itemHeight = 65;
+        //private static double itemWidth = 65;
+        //private static double itemHeight = 65;
 
         public DesignerItemViewModelBase(int id, IDiagramViewModel parent, double left, double top) : base(id, parent)
         {
@@ -56,17 +58,39 @@ namespace DiagramDesigner
             get { return connectors[3]; }
         }
 
-
-
-        public static double ItemWidth
+        public double ItemWidth
         {
-            get { return itemWidth; }
+            get { return _itemWidth; }
+            set
+            {
+                if(_itemWidth == value)
+                    return;
+                _itemWidth = value;
+                NotifyChanged(nameof(ItemWidth));
+            }
         }
 
-        public static double ItemHeight
+        public double ItemHeight
         {
-            get { return itemHeight; }
+            get { return _itemHeight; }
+            set
+            {
+                if(_itemHeight == value)
+                    return;
+                _itemHeight = value;
+                NotifyChanged(nameof(ItemHeight));
+            }
         }
+
+        //public static double ItemWidth
+        //{
+        //    get { return itemWidth; }
+        //}
+
+        //public static double ItemHeight
+        //{
+        //    get { return itemHeight; }
+        //}
 
         public bool ShowConnectors
         {

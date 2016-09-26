@@ -127,7 +127,8 @@ namespace DiagramDesigner
             return new ConnectorInfo()
             {
                 Orientation = orientation,
-                DesignerItemSize = new Size(DesignerItemViewModelBase.ItemWidth, DesignerItemViewModelBase.ItemHeight),
+                DesignerItemSize = new Size(sourceConnectorInfo.DataItem.ItemWidth,sourceConnectorInfo.DataItem.ItemHeight),
+                //DesignerItemSize = new Size(DesignerItemViewModelBase.ItemWidth, DesignerItemViewModelBase.ItemHeight),
                 DesignerItemLeft = left,
                 DesignerItemTop = top,
                 Position = position

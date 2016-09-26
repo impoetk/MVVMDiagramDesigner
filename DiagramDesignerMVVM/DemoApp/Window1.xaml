@@ -10,7 +10,7 @@
 	
 
     <Window.InputBindings>
-        <KeyBinding Key="Del"
+        <KeyBinding Key="Delete"
                     Command="{Binding DeleteSelectedItemsCommand}" />
     </Window.InputBindings>
 	
