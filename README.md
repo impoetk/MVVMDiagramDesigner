@@ -1,6 +1,4 @@
-# MVVMDiagramDesigner
-WPF diagram designer with full MVVM support, and pluggable persistence model
-
+****************************************************************************
 Forked repository, modifications to fit needs of own applications
 
 Main changes:
@@ -10,8 +8,10 @@ Main changes:
 <li>[Open] Overwork zooming and paning controls</li>
 <li>[Open] Fix strange errors for resources not found and 'infinite' not valid value for property Width in VS2015</li>
 </ul>
+******************************************************************************
 
-
+# MVVMDiagramDesigner
+WPF diagram designer with full MVVM support, and pluggable persistence model
 
 I wote all about this over at codeproject <a href="http://www.codeproject.com/Articles/484616/MVVM-Diagram-Designer" target="_blank">http://www.codeproject.com/Articles/484616/MVVM-Diagram-Designer</a>
 
